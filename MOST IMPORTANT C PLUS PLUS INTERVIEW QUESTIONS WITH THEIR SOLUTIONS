@@ -1,0 +1,466 @@
+### 1. What is C++? What are the advantages of C++?
+C++ is an object-oriented programming language introduced to address the limitations of C. It incorporates features like polymorphism, inheritance, abstraction, encapsulation, objects, and classes.
+
+**Advantages of C++:**
+
+- C++ is an object-oriented programming language, treating data as objects.
+- It is a multi-paradigm language, allowing programming with logic, structure, and procedure.
+- C++ supports dynamic memory allocation.
+- It is a mid-level language, suitable for developing games, desktop applications, drivers, and kernels.
+
+### 2. What are the different data types present in C++?
+Data types in C++ include:
+
+- **Primitive Data Types:** int, char, float, double, etc.
+- **Derived Data Types:** arrays, pointers, references, etc.
+- **User-Defined Data Types:** class, struct, union, enum, etc.
+
+### 3. Define ‘std’?
+‘std’ refers to the standard namespace in C++. Using `using namespace std;` allows access to all elements in the standard namespace without prefixing them with `std::`.
+
+### 4. What are references in C++?
+A reference is an alias for an already existing variable, created using the `&` symbol. Changes to the reference variable reflect in the original variable.
+
+```cpp
+int GFG = 10;
+int& ref = GFG;
+```
+
+### 5. What do you mean by Call by Value and Call by Reference?
+In C++, functions can be called by value or by reference.
+
+**Call by Value:**
+
+- A copy of the variable is passed.
+- Changes in the function do not affect the original variable.
+
+**Call by Reference:**
+
+- The variable itself is passed.
+- Changes in the function reflect in the original variable.
+
+### 6. Define token in C++
+A token is the smallest element of a program recognized by the compiler. Types include:
+
+- **Keywords:** Special meaning to the compiler.
+- **Identifiers:** Unique values/identities.
+- **Constants:** Unchanging values.
+- **Strings:** Homogeneous data sequences.
+- **Special Symbols:** Eg: [], {}, ;, *, =, #.
+- **Operators:** Perform operations on operands.
+
+### 7. What is the difference between C and C++?
+**C:**
+
+- Procedural programming language.
+- Does not support classes and objects.
+- Does not support OOP concepts like polymorphism, encapsulation, etc.
+
+**C++:**
+
+- Supports both procedural and object-oriented programming.
+- Supports OOP concepts.
+- Supports function and operator overloading.
+
+### 8. What is the difference between struct and class?
+**Struct:**
+
+- Members are public by default.
+- Value type, stored in memory as stacks.
+
+**Class:**
+
+- Members can be private, protected, or public.
+- Reference type, stored in memory as heaps.
+
+### 9. What is the difference between reference and pointer?
+**Reference:**
+
+- Cannot be reassigned.
+- Cannot hold null values.
+- Access members using `.`.
+
+**Pointer:**
+
+- Can be reassigned.
+- Can hold null values.
+- Access members using `->`.
+
+### 10. What is the difference between function overloading and operator overloading?
+**Function Overloading:**
+
+- Multiple functions with the same name but different parameters.
+- Example: `int GFG(int X, int Y);` and `int GFG(char X, char Y);`
+
+**Operator Overloading:**
+
+- Redefining the meaning of an operator.
+- Example: `int GFG() = X() + Y();`
+
+### 11. What is the difference between an array and a list?
+**Array:**
+
+- Contiguous memory locations of homogeneous data types.
+- Static in nature.
+- Uses less memory.
+
+**List:**
+
+- Linked elements with pointers.
+- Dynamic in nature.
+- Uses more memory due to pointers.
+
+### 12. What is the difference between a while loop and a do-while loop?
+**While Loop:**
+
+- Entry-controlled loop.
+- Executes only if the condition is true.
+
+**Do-While Loop:**
+
+- Exit-controlled loop.
+- Executes at least once, even if the condition is false.
+
+### 13. Discuss the difference between prefix and postfix?
+**Prefix:**
+
+- Operator before operand.
+- Executes before `;`.
+
+**Postfix:**
+
+- Operator after operand.
+- Executes after `;`.
+
+### 14. What is the difference between new and malloc()?
+**New:**
+
+- Operator, performs an operation.
+- Calls constructors.
+- Faster than malloc.
+
+**Malloc:**
+
+- Function, returns and accepts values.
+- Does not call constructors.
+- Returns `void*`.
+
+### 15. What is the difference between virtual functions and pure virtual functions?
+**Virtual Function:**
+
+- Member function of a base class, redefined in derived class.
+- Has a definition in base class.
+
+**Pure Virtual Function:**
+
+- Only declared in base class, defined in derived class.
+- Initialized with a pure specifier (= 0).
+- Base class becomes abstract.
+
+### 16. What are classes and objects in C++?
+**Class:**
+
+- User-defined data type with functions and data members.
+- Declared using `class` keyword.
+
+**Object:**
+
+- Instance of a class.
+- Used to access class members.
+
+### 17. What is Function Overriding?
+Function overriding occurs when a derived class redefines a base class function with the same name, parameters, and return type. It exemplifies runtime polymorphism.
+
+### 18. What are the various OOPs concepts in C++?
+- **Classes:** User-defined data type.
+- **Objects:** Instance of a class.
+- **Abstraction:** Showing only necessary details.
+- **Encapsulation:** Wrapping data in a single unit.
+- **Inheritance:** Deriving properties from another class.
+- **Polymorphism:** Many forms of the same thing.
+
+### 19. Explain inheritance
+Inheritance allows a class to derive properties and characteristics from another class, promoting code reuse and extension without modification.
+
+### 20. When should we use multiple inheritance?
+Multiple inheritance is used when a derived class needs to inherit attributes and implementations from more than one base class. It combines multiple contracts.
+
+### 21. What is virtual inheritance?
+Virtual inheritance ensures only one copy of a base class's member variables is inherited by derived classes, preventing multiple instances in the hierarchy.
+
+### 22. What is polymorphism in C++?
+Polymorphism allows a member function to display different behaviors depending on the object that calls it. Types include compile-time (function overloading, operator overloading) and runtime (function overriding, virtual function).
+
+### 23. What are the different types of polymorphism in C++?
+**Compile-Time Polymorphism:**
+
+- Achieved during compile time.
+- Includes function overloading and operator overloading.
+
+**Run-Time Polymorphism:**
+
+- Achieved during runtime.
+- Includes function overriding and virtual functions.
+
+### 24. Compare compile-time polymorphism and Runtime polymorphism
+**Compile-Time Polymorphism:**
+
+- Static binding.
+- Faster, as execution is determined at compile time.
+- Achieved through function and operator overloading.
+
+**Runtime Polymorphism:**
+
+- Dynamic binding.
+- Slower, as execution is determined at runtime.
+- Achieved through virtual functions and function overriding.
+
+### 25. Explain the constructor in C++.
+A constructor is a special member function of a class, with the same name as the class, that initializes an object. Types include:
+
+**Default Constructor:**
+
+- Takes no arguments.
+- Called automatically by the compiler.
+
+```cpp
+class Class_name {
+public:
+    Class_name() { cout << "I am a default constructor"; }
+};
+```
+
+**Parameterized Constructor:**
+
+- Takes arguments to initialize an object.
+- Used to overload constructors.
+
+```cpp
+class GFG {
+private:
+    int x, y;
+public:
+    GFG(int x1, int y1) : x(x1), y(y1) {}
+    int getX() { return x; }
+    int getY() { return y; }
+};
+```
+
+**Copy Constructor:**
+
+- Initializes an object using another object of the same class.
+
+```cpp
+Sample(Sample& t) { id = t.id; }
+```
+
+### 26. What are destructors in C++?
+
+Destructors are special member functions in a class that are called when an object of the class goes out of scope or is explicitly deleted. They have the same name as the class preceded by a tilde (~) sign and follow a down-to-top approach in contrast to constructors which follow a top-to-down approach.
+
+**Syntax:**
+```cpp
+~ClassName();
+```
+Refer to Destructor for more information.
+
+### 27. What is a virtual destructor?
+
+A virtual destructor is used when you need to delete instances of derived classes through a base class pointer. It ensures that the derived class's destructor is called first, followed by the base class's destructor, preventing memory leaks.
+
+It is recommended to declare destructors as virtual in polymorphic base classes.
+
+Refer to Virtual Destructor for more information.
+
+### 28. Is destructor overloading possible?
+
+No, destructor overloading is not possible in C++. A class can have only one destructor, which does not take any arguments or parameters.
+
+### 29. Which operations are permitted on pointers?
+
+Pointers in C++ can perform the following operations:
+- Increment/Decrement
+- Addition and Subtraction of integers
+- Comparison of pointers of the same type
+
+### 30. What is the purpose of the “delete” operator?
+
+The `delete` operator is used to deallocate memory that was previously allocated by the `new` operator, effectively deleting the object and freeing up space.
+
+**Example:**
+```cpp
+int* ptr = new int;
+delete ptr;
+```
+Refer to Delete operator for more information.
+
+### 31. How is `delete[]` different from `delete`?
+
+- `delete[]` is used to delete an array of objects.
+- `delete` is used to delete a single object.
+
+**Example:**
+```cpp
+int* arr = new int[10];
+delete[] arr;
+```
+
+### 32. What do you know about friend class and friend function?
+
+- A **friend class** can access private and protected members of the class in which it is declared as a friend.
+  
+  **Example:**
+  ```cpp
+  class Class1 {
+      friend class Class2;
+  };
+  ```
+
+- A **friend function** can access private and protected members of a class. It is not a member of the class but can be called like a regular function.
+
+  **Example:**
+  ```cpp
+  class GFG {
+      friend int divide(int a, int b);
+  };
+  ```
+
+Refer to Friend Function and Friend Class for more information.
+
+### 33. What is an Overflow Error?
+
+An Overflow Error occurs when a value exceeds the range of the data type. For example, if an `int` variable exceeds its maximum value of 2,147,483,647, an overflow error occurs.
+
+### 34. What does the Scope Resolution operator do?
+
+The scope resolution operator (`::`) is used to:
+- Access global variables when a local variable has the same name.
+- Define functions outside the class.
+- Resolve scope in case of multiple inheritance.
+- Access namespace members.
+
+### 35. What are the C++ access modifiers?
+
+Access modifiers specify the accessibility of class members. They are:
+- **Private:** Accessible only within the class.
+- **Protected:** Accessible within the class and derived classes.
+- **Public:** Accessible from outside the class.
+
+Refer to Access Modifiers for more information.
+
+### 36. Can you compile a program without the main function?
+
+Yes, it is possible to compile a program without a `main()` function by using macros to define `main`.
+
+**Example:**
+```cpp
+#include <stdio.h>
+#define fun main
+int fun(void) {
+    printf("Geeksforgeeks");
+    return 0;
+}
+```
+Refer to Can you compile a program without the main function for more information.
+
+### 37. What is STL?
+
+STL stands for Standard Template Library, providing components like containers, algorithms, and iterators.
+
+Refer to STL in C++ for more information.
+
+### 38. Define inline function. Can we have a recursive inline function in C++?
+
+An inline function is a request to the compiler to replace the function call with its code to reduce the overhead of function calls. Recursive inline functions are not possible because the compiler cannot handle the inline expansion of recursive calls.
+
+**Syntax:**
+```cpp
+inline data_type function_name() {
+    // body
+}
+```
+Refer to Inline Function for more information.
+
+### 39. What is an abstract class and when do you use it?
+
+An abstract class is a class designed to be a base class and contains at least one pure virtual function (`= 0`). It cannot be instantiated and is used to provide a common interface for derived classes.
+
+Refer to Abstract Class for more information.
+
+### 40. What are static data members and static member functions?
+
+- **Static Data Member:** A class member declared with the `static` keyword, shared among all instances of the class.
+
+  **Syntax:**
+  ```cpp
+  static Data_Type Data_Member;
+  ```
+
+- **Static Member Function:** A member function that can access only static data members and other static member functions.
+
+  **Syntax:**
+  ```cpp
+  classname::function_name(parameter);
+  ```
+
+### 41. What is the main use of the keyword “Volatile”?
+
+The `volatile` keyword tells the compiler that a variable's value may change at any time, preventing optimizations on the variable. It is used in situations like interfacing with hardware or signal handlers.
+
+Refer to Volatile for more information.
+
+### 42. Define storage class in C++ and name some
+
+Storage classes define the lifetime and visibility of variables and functions. Examples include:
+- **auto**
+- **register**
+- **static**
+- **extern**
+- **mutable**
+
+Refer to Storage Class for more information.
+
+### 43. What is a mutable storage class specifier? How can they be used?
+
+The `mutable` keyword allows a class data member to be modified even if the object is declared as `const`. It cannot be used with `static` or `const` members or references.
+
+### 44. Define the Block scope variable.
+
+A block scope variable is a local variable declared inside a function or block (like loops or if blocks). It is only accessible within that block.
+
+Refer to Scope of a variable for more information.
+
+### 45. What is the function of the keyword “Auto”?
+
+The `auto` keyword allows the compiler to infer the type of a variable from its initializer, simplifying code with complex types.
+
+Refer to Auto in C++ for more information.
+
+### 46. Define namespace in C++.
+
+Namespaces organize code into logical groups and prevent name conflicts. They provide a scope for identifiers like variables, functions, and classes.
+
+Refer to Namespace in C++ for more information.
+
+### 47. When is void() return type used?
+
+The `void` return type indicates that a function does not return a value. It can also be used in parameter lists to indicate that the function takes no parameters.
+
+Refer to Void return type for more information.
+
+### 48. What is the difference between shallow copy and deep copy?
+
+- **Shallow Copy:** Copies the object's structure but not the elements, resulting in shared elements.
+- **Deep Copy:** Copies the object and all its elements, creating independent duplicates.
+
+Refer to Shallow copy vs Deep Copy for more information.
+
+### 49. Can we call a virtual function from a constructor?
+
+Yes, you can call a virtual function from a constructor, but it will not exhibit polymorphic behavior as the constructor of the derived class has not yet been executed.
+
+### 50. What are void pointers?
+
+A void pointer is a type of pointer that can point to any data type. It can be cast to any type as needed.
+
+Refer to Void Pointer in C++ for more information.
